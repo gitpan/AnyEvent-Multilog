@@ -4,7 +4,7 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
@@ -13,15 +13,15 @@ my %WriteMakefileArgs = (
   'AUTHOR' => 'Jonathan Rockway <jrockway@cpan.org>',
   'BUILD_REQUIRES' => {
     'Directory::Scratch' => '0',
+    'File::Which' => '0',
     'Sub::Exporter' => '0',
     'Test::Builder' => '0',
     'Test::More' => '0',
     'ok' => '0',
-    'perl' => '5.010',
     't::lib::multilog' => '0'
   },
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'AnyEvent-Multilog',
   'EXE_FILES' => [],
@@ -34,7 +34,7 @@ my %WriteMakefileArgs = (
     'MooseX::Types::Path::Class' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '1.102860',
+  'VERSION' => '1.102861',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -1,6 +1,7 @@
 Changes
 LICENSE
 MANIFEST
+META.json
 META.yml
 Makefile.PL
 README
@@ -12,3 +13,4 @@ t/leftovers.t
 t/lib/multilog.pm
 t/release-pod-syntax.t
 t/rotate.t
+xt/stress.t
